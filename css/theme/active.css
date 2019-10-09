@@ -4,7 +4,7 @@
  *
  */
 @import url(../../lib/font/merriweather/merriweather.css);
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/pt-mono/pt-mono.css);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -19,7 +19,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "Source Sans Pro";
+  font-family: "Merriweather";
   font-size: 30px;
   font-weight: normal;
   color: #333; }
@@ -280,7 +280,7 @@ body {
   text-align: left; }
 
 .reveal .progress {
-  height: 0.2em;
+  height: 0.3em;
   color: #d16262;
   background-color: #832518; }
 
@@ -321,8 +321,22 @@ li::before {
   font-size: 0.9em;
   /* Adjust this value so that it appears what size you want. */ }
 
-body {
-  background-image: url("../../lib/images/logo.svg");
-  background-repeat: no-repeat;
-  background-position: bottom 10px right  7em;
-  background-size: auto 5em; }
+.slide-background:before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: url("../../lib/images/logo.svg") left top no-repeat;
+  width: 220px;
+  height: 80px;
+  bottom: 15px;
+  right: 4em;
+  background-size: 220px 80px;
+  z-index: 9999; }
+
+.reveal pre {
+  box-shadow: none;
+  margin: 20px auto 20px 0;
+  font-size: 0.8em;
+  padding-left: 20px;
+  border-left: 3px solid #ccc;
+  font-family: "PT Mono"; }
