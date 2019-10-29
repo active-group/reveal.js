@@ -92,13 +92,14 @@ html,body{
 li {
     list-style-type: none;
     position: relative;    /* It is required for setting position to absolute in the next rule. */
+    padding: 0.25em 0;
 }
 
 li::before {
     content: '\2022';      /* Unicode for • character */
     position: absolute;
     left: -0.8em;          /* Adjust this value so that it appears where you want. */
-    font-size: 0.9em;      /* Adjust this value so that it appears what size you want. */
+    font-size: 1em;      /* Adjust this value so that it appears what size you want. */
 }
 
 
